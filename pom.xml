@@ -44,6 +44,13 @@
         <osgi.dynamic />
     </properties>
 
+    <scm>
+        <url>https://github.com/savoirtech/osgi-parent</url>
+        <connection>scm:git:git@github.com:savoirtech/osgi-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:savoirtech/osgi-parent.git</developerConnection>
+        <tag>osgi-parent-parent-1.0.25</tag>
+    </scm>
+
     <build>
 
         <plugins>
