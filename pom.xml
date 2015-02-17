@@ -13,11 +13,9 @@
   ~ GNU General Public License for more details.
   ~
   ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses />.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
         <groupId>com.savoirtech</groupId>
@@ -29,7 +27,7 @@
     <artifactId>osgi-parent</artifactId>
     <name>Savoir OSGi Bundle Parent POM</name>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
 
@@ -40,10 +38,10 @@
         <osgi.export>{local-packages};-split-package:=error</osgi.export>
         <osgi.import>*</osgi.import>
         <osgi.private>{local-packages}</osgi.private>
-        <osgi.embed/>
+        <osgi.embed />
         <osgi.embed.dir>lib</osgi.embed.dir>
-        <osgi.activator/>
-        <osgi.dynamic/>
+        <osgi.activator />
+        <osgi.dynamic />
     </properties>
 
     <scm>
