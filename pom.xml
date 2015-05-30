@@ -20,7 +20,7 @@
     <parent>
         <groupId>com.savoirtech</groupId>
         <artifactId>savoir-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -48,24 +48,22 @@
         <url>https://github.com/savoirtech/osgi-parent</url>
         <connection>scm:git:git@github.com:savoirtech/osgi-parent.git</connection>
         <developerConnection>scm:git:git@github.com:savoirtech/osgi-parent.git</developerConnection>
-
     </scm>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <version>${osgi.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.compendium</artifactId>
-            <version>${osgi.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.core</artifactId>
+                <version>${osgi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.compendium</artifactId>
+                <version>${osgi.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>
